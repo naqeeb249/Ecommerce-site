@@ -1,0 +1,228 @@
+
+*{
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+body{
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.main-nav {
+    font-family: "Metal Mania";
+    margin: 0%;
+    background-color: rgb(97, 95, 95);
+    display:block;
+    color: white;
+    font-weight: 100;
+    
+}
+
+.main-heading {
+    font-size: 8rem;
+    padding-bottom: 2rem;
+    margin-top: 0%;
+}
+.product-heading{
+    font-family: 'Metal Mania';
+    font-size: 1.8rem;
+}
+
+.container{
+max-width: 900px;
+margin: 0 auto;
+padding: 0 1.5em;
+}
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-item-heading{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-item{
+    margin: 30px;
+}
+
+.shop-item-details{
+display: flex;
+align-items: center;
+padding: 5px;
+
+}
+.shop-item-price{
+    flex-grow: 1;
+    margin-right: 100px;
+}
+
+button{
+    background-color: rgb(107, 208, 248);
+    border-radius: 5px ;
+    border: none;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 0.6rem 0.6rem;
+}
+
+button:hover{
+    background-color: rgb(7, 99, 153);
+}
+
+.merch-items{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.merch-item{
+    margin: 30px;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-row{
+display: flex;
+
+
+}
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    padding-bottom:10px ;
+
+}
+.cart-item{
+width: 45%;
+}
+
+.cart-item-price{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-item-image{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.cart-quantity{
+    width: 35%;
+}
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.btn-danger{
+    background-color: rgb(241, 68, 68);
+}
+.btn-danger:hover{
+    background-color: rgb(138, 6, 6);
+}
+.cart-item-name{
+   color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-row:last-child .cart-column{
+    border: none;
+}
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-total{
+    text-align: end;
+    margin: 10px;
+}
+.cart-total-title{
+   font-weight: bold;
+   font-size: 1.5rem;
+   margin-right: 15px;
+}
+
+.cart-total-price{
+    font-size: 1.1em;
+}
+.purchase-button{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+
+.main-footer{
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+.nav li {
+    display: inline;
+}
+.footer-nav li {
+    padding: 0 .5em;
+}
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
