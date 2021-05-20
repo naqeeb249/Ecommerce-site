@@ -21,7 +21,9 @@ function ready() {
     for (var i = 0; i < addToCartButtons.length; i++) {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
+       
     }
+    
 
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
@@ -56,7 +58,8 @@ function addToCartClicked(event) {
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
     addItemToCart(title, price, imageSrc)
-    updateCartTotal()
+    updateCartTotal();
+    
 }
 
 function addItemToCart(title, price, imageSrc) {
@@ -69,7 +72,9 @@ function addItemToCart(title, price, imageSrc) {
             alert('This item is already added to the cart')
             return
         }
+        
     }
+
     var cartRowContents = `
         <div class="cart-item cart-column">
             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
@@ -84,6 +89,21 @@ function addItemToCart(title, price, imageSrc) {
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+    notification();
+}
+
+function notification(){
+    const notif = document.createElement('div');
+    notif.classList.add('toast','toggleContainer');
+    notif.innerText='Product added to cart'
+   
+    let items = document.getElementsByClassName('shop-items')[0];
+   items.append(notif);
+
+
+    setTimeout(() => {
+        notif.remove();
+       },3000)
 }
 
 function updateCartTotal() {
@@ -100,4 +120,24 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+
+
+var imgContainers = document.getElementsByClassName('shop-item-image');
+for(let i=0; i<imgContainers.length; i++){
+   let image = imgContainers[i];
+
+   console.log(image);
+
+   image.addEventListener('mousemove', (e) => {
+    
+    image.style.transformOrigin = 'center center';
+    image.style.transform = 'scale(1.5)';
+   });
+   image.addEventListener('mouseleave',()=>{
+ 
+    image.style.transformOrigin = 'center center';
+    image.style.transform = 'scale(1)';
+   }); 
 }
