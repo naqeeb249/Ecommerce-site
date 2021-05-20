@@ -5,6 +5,7 @@
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css" />
         <script src="index.js" async></script>
+       
     </head>
     <body>
         <header class="main-header">
@@ -13,6 +14,11 @@
                     <li><a href="./home.html">HOME</a></li>
                     <li><a href="./index.html">STORE</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
+                    <div class="cart">
+                        <li><a href="#cart"><img src="./images/shopping-cart.png" alt="" class="cart-image">
+                            <span class='badge badge-warning' id='lblCartCount'>0</span> Cart</a></li>
+                    </div>
+              
                 </ul>
             </nav>
             <h1 class="band-name band-name-large">The Generics</h1>
@@ -76,7 +82,7 @@
             </div>
         </section>
         <section class="container content-section">
-            <h2 class="section-header">CART</h2>
+            <h2 class="section-header" id="cart">CART</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>

@@ -41,6 +41,7 @@ function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
+    cartNumbeUpdate();
 }
 
 function quantityChanged(event) {
@@ -59,6 +60,7 @@ function addToCartClicked(event) {
     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
     addItemToCart(title, price, imageSrc)
     updateCartTotal();
+    cartNumbeUpdate();
     
 }
 
@@ -140,4 +142,12 @@ for(let i=0; i<imgContainers.length; i++){
     image.style.transformOrigin = 'center center';
     image.style.transform = 'scale(1)';
    }); 
+}
+
+function cartNumbeUpdate(){
+    var numberOfitems = document.getElementsByClassName('cart-item');
+
+    var numberInCart = document.getElementById('lblCartCount')
+    
+    numberInCart.innerHTML = numberOfitems.length - 1;
 }
