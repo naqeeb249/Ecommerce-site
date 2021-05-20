@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+   
+}
+
+body{
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.main-nav {
+    font-family: "Metal Mania";
+    margin: 0%;
+    background-color: rgb(97, 95, 95);
+    display:block;
+    color: white;
+    font-weight: 100;
+    border-bottom: 2px solid rgba(243, 226, 226, 0.3);
+}
+.nav a {
+
+    padding: .5em;
+    padding-bottom: 0%;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav li {
+  display: inline;
+    font-size: 1.25rem;
+   
+}
+
+.main-heading {
+    font-size: 8rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.home-btn{
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    margin-bottom: 0px;
+}
+
+.btn-play{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+
+}
+
+.btn:hover{
+    background-color:  rgba(131, 124, 124, 0.1);;
+}
+.tour-row{
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+   border-bottom: 1px solid;
+}
+
+.tour-item{
+    display: inline-block;
+    text-align: left;
+    padding-right: .5em;
+
+}
+
+.tour-date{
+    font-weight: bold;
+    color: rgb(29, 28, 28);
+    width: 20%;
+    
+}
+.tour-city{
+    width: 24%;
+    color: #777;
+}
+
+.tour-place{
+    width: 42%;
+    color: #777;
+}
+.btn-buy {
+    max-width: 19%;
+    background-color: #6abff0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn-buy:hover{
+    background-color: rgb(6, 112, 145);
+}
+
+.tour-title{
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+.main-footer{
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+    margin-top: 50px;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    display: inline;
+    padding: 0 .5em;
+}
+.footer-nav ul{
+    display: inline;
+}
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
